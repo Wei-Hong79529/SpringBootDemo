@@ -1,0 +1,35 @@
+# Eclipse
+.apt_generated
+.apt_generated_tests
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+.sonarlint
+
+# Intellij
+.idea/
+*.iml
+*.iws
+/.jpb/
+
+# Mac
+.DS_Store
+
+# Maven
+bin/
+log/
+target/
+*.log
+/.metadata/
+
+# VsCode
+.vscode
+
+# local Config
+application-local.yml
+
+# log file
+rpms-log
