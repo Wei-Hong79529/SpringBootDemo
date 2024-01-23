@@ -8,7 +8,7 @@ pipeline {
             post {
                 success {
                     echo '开始存档...'
-                    archiveArtifacts artifacts: '**/target/*.war'
+                    archiveArtifacts artifacts: '**/target/*.jar'
                 }
             }
         }
