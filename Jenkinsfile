@@ -19,7 +19,7 @@ pipeline {
 
         stage('deploy-to staging'){
             steps{
-                build jobs:'deploy-to staging'
+                build job:'deploy-to staging'
             }
             post {
                 success {
