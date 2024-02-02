@@ -11,8 +11,22 @@ pipeline {
             }
             post {
                 success {
-                    echo '开始存档...'
-                    archiveArtifacts artifacts: '**/target/*.war'
+                    echo '開始儲存...'
+                    archiveArtifacts artifacts: '**/*.war'
+                }
+            }
+        }
+
+        stage('deploy-to staging'){
+            steps{
+                build jobs:'deploy-to staging'
+            }
+            post {
+                success {
+                echo 'deploy-to staging success'
+                }
+                failure{
+                   echo 'deploy-to staging fail'
                 }
             }
         }
